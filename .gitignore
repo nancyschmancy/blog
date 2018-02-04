@@ -2,3 +2,4 @@
 /env.d
 *.pyc
 /.idea
+aws.pem

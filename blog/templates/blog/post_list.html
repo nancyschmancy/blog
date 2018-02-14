@@ -1,9 +1,14 @@
-<html>
-    <head>
-        <title>WTF</title>
-    </head>
-    <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
-    </body>
-</html>
+{% extends 'blog/base.html' %}
+
+{% block title %}blog posts and shit{% endblock %}
+
+{% block body %}
+
+{% for post in posts %}
+    <p>
+    <b>{{ post.title }}</b> posted on {{ post.created_date }}<br>
+    {{ post.text }}
+    </p>
+{% endfor %}
+
+{% endblock %}

@@ -27,5 +27,5 @@ class PanicLevel(models.Model):
     """ This table tracks my panic level as I embark on this journey. """
 
     level = models.IntegerField()
-    description = models.TextField(max_length=50)
+    description = models.CharField(max_length=50)
     create_date = models.DateTimeField(default=timezone.now)
